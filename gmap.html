@@ -1,0 +1,42 @@
+<!doctype html>
+<!--
+ @license
+ Copyright 2025 Google LLC. All Rights Reserved.
+ SPDX-License-Identifier: Apache-2.0
+-->
+
+<html>
+  <head>
+    <title>Add a Map with Markers using HTML</title>
+    <style>
+      gmp-map {
+          height: 100%;
+      }
+      html,
+      body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+      }
+    </style>
+    <script type="module" src="./index.js"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?loading=async&key=AIzaSyCqvuZ-XEhj-RSU30Q9eQEh6f475TwSjdQ&libraries=maps,marker"
+    ></script>
+  </head>
+  <body>
+    <gmp-map center="46.6500726,32.6383223" zoom="12.7" map-id="DEMO_MAP_ID">
+		<gmp-advanced-marker position="46.620949, 32.580318" ></gmp-advanced-marker>
+		<gmp-advanced-marker position="46.614162, 32.592176" ></gmp-advanced-marker>
+		<gmp-advanced-marker position="46.599085, 32.552925" ></gmp-advanced-marker>
+		<gmp-advanced-marker position="46.598931, 32.552692" ></gmp-advanced-marker>
+		<gmp-advanced-marker position="46.603317, 32.567723" ></gmp-advanced-marker>
+		<gmp-advanced-marker position="46.598899, 32.546738" title="о/с СОУ"></gmp-advanced-marker>
+		<gmp-advanced-marker position="46.604583, 32.559879" ></gmp-advanced-marker>
+		<gmp-advanced-marker position="46.61798, 32.540545" title="антена зв’язку"></gmp-advanced-marker>
+		<gmp-advanced-marker position="46.62739, 32.597067" title="пу БпЛА"></gmp-advanced-marker>
+		<gmp-advanced-marker position="46.626097, 32.5953" title="міст"></gmp-advanced-marker></gmp-advanced-marker>
+    </gmp-map>
+  </body>
+</html>
